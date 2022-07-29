@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bitmapAnimations"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/bitmap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/uiVisibility"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ui_visibility"
+        app:layout_constraintEnd_toEndOf="@+id/bitmapAnimations"
+        app:layout_constraintStart_toStartOf="@+id/bitmapAnimations"
+        app:layout_constraintTop_toBottomOf="@+id/bitmapAnimations" />
+
+    <Button
+        android:id="@+id/objectAnimations"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/object_animator"
+        app:layout_constraintEnd_toEndOf="@+id/uiVisibility"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/uiVisibility"
+        app:layout_constraintTop_toBottomOf="@+id/uiVisibility" />
+
+    <Button
+        android:id="@+id/physicsAnimations"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/physics_animator"
+        app:layout_constraintEnd_toEndOf="@+id/objectAnimations"
+        app:layout_constraintStart_toStartOf="@+id/objectAnimations"
+        app:layout_constraintTop_toBottomOf="@+id/objectAnimations" />
+
+    <Button
+        android:id="@+id/layoutAnimations"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/layout_change"
+        app:layout_constraintEnd_toEndOf="@+id/physicsAnimations"
+        app:layout_constraintStart_toStartOf="@+id/physicsAnimations"
+        app:layout_constraintTop_toBottomOf="@+id/physicsAnimations" />
+
+    <Button
+        android:id="@+id/activityAnimations"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/between_activities"
+        app:layout_constraintEnd_toEndOf="@+id/layoutAnimations"
+        app:layout_constraintStart_toStartOf="@+id/layoutAnimations"
+        app:layout_constraintTop_toBottomOf="@+id/layoutAnimations" />
+
+    <TextView
+        android:id="@+id/valueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value_animated"
+        app:layout_constraintStart_toStartOf="@+id/activityAnimations"
+        app:layout_constraintTop_toBottomOf="@+id/activityAnimations" />
+
+    <TextView
+        android:id="@+id/objectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/object_animated"
+        app:layout_constraintStart_toStartOf="@+id/valueText"
+        app:layout_constraintTop_toBottomOf="@+id/valueText" />
+
+    <TextView
+        android:id="@+id/setText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_animated"
+        app:layout_constraintStart_toStartOf="@+id/objectText"
+        app:layout_constraintTop_toBottomOf="@+id/objectText" />
+
+    <TextView
+        android:id="@+id/callbackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/callback_animated"
+        app:layout_constraintStart_toStartOf="@+id/setText"
+        app:layout_constraintTop_toBottomOf="@+id/setText" />
+
+    <TextView
+        android:id="@+id/interpolateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/interpolate_animated"
+        app:layout_constraintStart_toStartOf="@+id/callbackText"
+        app:layout_constraintTop_toBottomOf="@+id/callbackText" />
+
+    <TextView
+        android:id="@+id/keyframeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/keyframe_animated"
+        app:layout_constraintStart_toStartOf="@+id/interpolateText"
+        app:layout_constraintTop_toBottomOf="@+id/interpolateText" />
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/restart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/activityAnimations"
+        app:layout_constraintStart_toStartOf="@+id/activityAnimations" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/restart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/interpolateText"
+        app:layout_constraintTop_toBottomOf="@+id/activityAnimations">
+
+        <ImageView
+            android:id="@+id/arcCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_circle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

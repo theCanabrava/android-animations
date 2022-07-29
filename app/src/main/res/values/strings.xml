@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Android Animations</string>
+    <string name="bitmap">Bitmap Animations</string>
+    <string name="ui_visibility">UI Animations</string>
+    <string name="object_animator">Object Animations</string>
+    <string name="physics_animator">Physics Animations</string>
+    <string name="layout_change">Layout Change</string>
+    <string name="between_activities">Activity Change</string>
+    <string name="restart">Restart</string>
+
+    <string name="value_animated">Value Animated</string>
+    <string name="object_animated">Object Animated</string>
+    <string name="set_animated">Set Animated</string>
+    <string name="callback_animated">Callback Animated</string>
+    <string name="interpolate_animated">Interpolated Animated</string>
+    <string name="keyframe_animated">Keyframe Animated</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="cross_fade">Cross fade</string>
+    <string name="description_image_1">Card Image</string>
+    <string name="card_back_title">Card Title</string>
+    <string name="card_back_description">Card Description</string>
+    <string name="flip_fade">Flip animation</string>
+    <string name="circle_fade">Circular animation</string>
+    <string name="circle_text">Card Description</string>
+
+    <string name="fling_down">Down</string>
+    <string name="fling_right">Right</string>
+    <string name="fling_up">Up</string>
+    <string name="fling_left">Left</string>
+    <string name="zoom_text">Click to zoom</string>
+
+    <string name="add_element">Add element</string>
+    <string name="move_element">Move element</string>
+    <string name="element">Element</string>
+
+    <string name="animated_transition">Animated transition</string>
+    <string name="view_pager_1">Fragment view pager v1</string>
+    <string name="view_pager_2">Fragment view pager v2</string>
+
+    <string name="swipe_to_change">Swipe to next fragment</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="fragment_title">Fragment Title</string>
+</resources>
